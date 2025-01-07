@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>To-Do Items</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js"></script>
+        <script src="../js/script3.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="./to-do-items.html">To-Do Items</a></li>
+                <li><a href="./add-item.html">Add Item</a></li>
+                <li style="float:right"><button id="logout">Log out</button></li>
+            </ul>
+        </nav>
+        <h1>Tasks</h1>
+        <div class="bigContainer">
+            <div class="filterContainer">
+                <label id="shorts" for="sorts">Filter tasks by:</label>
+                <select id="sorts">
+                    <option value="none">None</option>
+                    <option value="overdue">Overdue</option>
+                    <option value="deadline">Deadline</option>
+                    <option value="done">Done</option>
+                    <option value="undone">Undone</option>
+                </select>
+            </div>
+            <div class="tasksContainer">
+                <table id="tasks">
+                    <thead>
+                        <tr>
+                            <th><strong>Task</strong></th>
+                            <th><strong>Deadline</strong></th>
+                            <th><strong>Status</strong></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
